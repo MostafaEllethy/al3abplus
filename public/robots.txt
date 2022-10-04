@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://al3abplus.com
+
+# Sitemaps
+Sitemap: https://al3abplus.com/sitemap.xml

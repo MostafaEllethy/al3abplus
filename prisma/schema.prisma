@@ -1,0 +1,63 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider          = "postgresql"
+  url               = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
+}
+
+model Category {
+  id       Int    @id @default(autoincrement())
+  title    String @unique
+  color    String
+  imageUrl String @unique
+  path     String @unique
+  games    Game[]
+}
+
+model Game {
+  id             Int       @id @default(autoincrement())
+  name           String
+  title          String    @unique
+  path           String    @unique
+  originUrl      String?
+  iFrameLink     String
+  categoryId     Int
+  imageUrl       String
+  description    String
+  likes          Int       @default(0)
+  dislikes       Int       @default(0)
+  createdAt      DateTime  @default(now())
+  publishAt      DateTime?
+  providerId     Int
+  gameMonetizeId String
+  featured       Boolean   @default(false)
+  category       Category  @relation(fields: [categoryId], references: [id])
+  provider       Provider  @relation(fields: [providerId], references: [id])
+  order          Int?
+  mobileReady    Boolean
+}
+
+model Provider {
+  id   Int    @id @default(autoincrement())
+  name String @unique
+  Game Game[]
+}
+
+model SearchLog {
+  name  String @id @unique
+  count Int    @default(0)
+}
+
+model Contact {
+  id      Int    @id @default(autoincrement())
+  name    String
+  email   String
+  message String
+}
+
+model IgnoredGames {
+  url String @id @unique
+}

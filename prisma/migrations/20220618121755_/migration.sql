@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE "Game" ALTER COLUMN "mobileReady" DROP NOT NULL,
+ALTER COLUMN "mobileReady" DROP DEFAULT;

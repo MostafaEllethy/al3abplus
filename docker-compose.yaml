@@ -1,8 +1,9 @@
 version: "3"
 services:
   al3ab-plus:
+    container_name: al3ab-plus
     build: .
     network_mode: bridge
     environment:
-    - VIRTUAL_HOST=al3abplus.mostafaellethy.com
-    - LETSENCRYPT_HOST=al3abplus.mostafaellethy.com
+      - VIRTUAL_HOST=al3abplus.mostafaellethy.com
+      - LETSENCRYPT_HOST=al3abplus.mostafaellethy.com

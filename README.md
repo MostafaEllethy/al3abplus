@@ -2,7 +2,7 @@
 
 ####
 
-Arabic online gaming platform for browser-based games. Powered by the React framework Next.js and Tailwind CSS.
+Arabic website for browser-based games. Powered by the React framework Next.js and Tailwind CSS.
 
 &nbsp;
 

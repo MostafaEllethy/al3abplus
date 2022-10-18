@@ -8,7 +8,7 @@ Arabic website for browser-based games. Powered by the React framework Next.js a
 
 ## 🎉 Live Site
 
-[View Live](https://al3abplus.mostafaellethy.com/)
+[View Live](https://al3abplus.com/)
 
 &nbsp;
 

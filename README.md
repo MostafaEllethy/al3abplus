@@ -6,12 +6,6 @@ Arabic website for browser-based games. Powered by the React framework Next.js a
 
 &nbsp;
 
-## 🎉 Live Site
-
-[View Live](https://al3abplus.com/)
-
-&nbsp;
-
 ## ✨ Features
 
 <ul>
